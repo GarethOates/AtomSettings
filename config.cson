@@ -1,0 +1,49 @@
+"*":
+  core:
+    disabledPackages: [
+      "activate-power-mode"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "node_modules"
+      "vendor"
+    ]
+    projectHome: "/Users/Goatie/Developer"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+    tabType: "hard"
+  "exception-reporting":
+    userId: "2b5f9c0b-1887-b3fa-3b9b-f2233dca190d"
+  linter:
+    showProviderName: false
+  "linter-eslint":
+    useGlobalEslint: true
+  "merge-conflicts":
+    gitPath: "/usr/bin/git"
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+".git-commit.text":
+  editor:
+    tabLength: 4
+".git-config.source":
+  editor:
+    tabLength: 4
+".git-rebase.text":
+  editor:
+    tabLength: 4
+".riot.source":
+  editor:
+    tabLength: 4
