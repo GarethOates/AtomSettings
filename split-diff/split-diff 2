@@ -1,0 +1,137 @@
+(function () {
+    'use strict';
+    // start the load before the DOM is ready
+    let threadStore = {
+            'logs': [],
+            'context': {
+                'id': '2p3i-hfg3-pif-f3ff',
+                'type': 'assignment',
+                'name': 'Feedback',
+                'state': 'draft',
+                'user'    : {
+                    'id'  : '124412-ihph-412-108rfn',
+                    'name': 'Cristina Menduinya',
+                    'role': 'teacher'
+                }
+            }
+        },
+
+        initialDataRequest = fetchData(),
+
+        config = {
+            'i18n': {
+                'CONTEXT'    : 'Feedback',
+                'PLACEHOLDER': 'Add feedback here',
+                'SUBMIT'     : 'Send'
+            },
+            'loading': true
+        };
+
+    // wait for the DOM
+    document.addEventListener('DOMContentLoaded', init);
+
+    function init() {
+        let thread = riot.mount('#my-context-thread', config)[0],
+            threadChat = thread.tags['ymir-chat-add'];
+
+        threadChat.onChatAdded = (assignmentId, chat) => {
+            threadStore.logs.push({
+                'user'    : threadStore.context.user,
+                'message'    : chat,
+                'createdAt'    : new Date().toISOString(),
+                'type'    : 'chat',
+                'state'  : threadStore.context.status
+            });
+
+            thread.update(threadStore);
+        };
+
+        setupEventButtons(thread);
+
+        initialDataRequest.then((response) => updateThread(thread, response));
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////  HELPERS /////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    function setupEventButtons(thread) {
+        document.getElementById('reload-thread')
+            .addEventListener('click', () => {
+                threadStore.loading = true;
+
+                thread.update(threadStore);
+
+                fetchData().then((response) => updateThread(thread, response));
+            });
+
+        document.querySelector('#context-thread-component')
+            .addEventListener('change', (e) => {
+                if (e.target.name !== 'status') {
+                    return;
+                }
+
+                threadStore.logs.push({
+                    'user'    : {
+                        'id'   : '125112-7sph-1f7-10pi4fn',
+                        'name' : 'Gavin King',
+                        'role' : 'student'
+                    },
+                    'message'    : null,
+                    'createdAt'    : new Date().toISOString(),
+                    'type'    : 'status-change',
+                    'state'  : e.target.value
+                });
+
+                threadStore.context.status = e.target.value;
+
+                thread.update(threadStore);
+            });
+    }
+
+    function updateThread(thread, response) {
+        threadStore.loading = false;
+
+        thread.update(threadStore);
+    }
+
+    /**
+     * Simulates an API call to fetch data
+     */
+    function fetchData() {
+        threadStore.logs = [
+            {
+                'user'    : {
+                    'id'   : '124412-ihph-412-108rfn',
+                    'name' : 'Cristina Menduinya',
+                    'role' : 'teacher'
+                },
+                'message'   : 'I don\'t understand what I\'m supposed to do. Can you help?',
+                'createdAt' : new Date().toISOString(),
+                'type'      : 'chat',
+                'state'     : 'draft'
+            },
+            {
+                'user'    : {
+                    'name' : 'Gavin King',
+                    'role' : 'student'
+                },
+                'id'        : '125112-7sph-1f7-10pi4fn',
+                'message'   : null,
+                'createdAt' : new Date().toISOString(),
+                'type'      : 'status-change',
+                'state'     : 'evaluated'
+            }
+        ];
+
+        // fake promise
+        return {
+            then: (fn) => {
+                setTimeout(function () {
+                    fn(threadStore);
+                }, 1000);
+            }
+        };
+    }
+
+}());

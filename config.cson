@@ -1,10 +1,9 @@
 "*":
   "atom-beautify":
+    general:
+      _analyticsUserId: "d4d3fb0b-5a91-44cf-85fb-bc2327452857"
     js: {}
   core:
-    disabledPackages: [
-      "activate-power-mode"
-    ]
     ignoredNames: [
       ".git"
       ".hg"
@@ -27,12 +26,18 @@
     tabType: "hard"
   "exception-reporting":
     userId: "2b5f9c0b-1887-b3fa-3b9b-f2233dca190d"
+  "git-diff":
+    showIconsInEditorGutter: true
   linter:
     showProviderName: false
   "linter-eslint":
     useGlobalEslint: true
   "merge-conflicts":
     gitPath: "/usr/bin/git"
+  minimap:
+    plugins:
+      "split-diff": true
+      "split-diffDecorationsZIndex": 0
   "tree-view":
     hideIgnoredNames: true
   welcome:
