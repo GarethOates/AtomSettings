@@ -23,7 +23,7 @@
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
     tabLength: 4
-    tabType: "hard"
+    tabType: "soft"
   "exception-reporting":
     userId: "2b5f9c0b-1887-b3fa-3b9b-f2233dca190d"
   "git-diff":

@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-11686-1234-1wva48l/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-11686-1234-1wva48l/package.tgz",
+        "spec": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-11686-1234-1wva48l/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/apm-install-dir-11686-1234-tg0r31"
+    ]
+  ],
+  "_from": "../d-11686-1234-1wva48l/package.tgz",
+  "_id": "linter-tslint@0.11.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/linter-tslint",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-11686-1234-1wva48l/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-11686-1234-1wva48l/package.tgz",
+    "spec": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-11686-1234-1wva48l/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11686-1234-1wva48l/package.tgz",
+  "_shasum": "66bac6b9b0c1e67dde6c254b1873df4501590057",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-11686-1234-1wva48l/package.tgz",
+  "_where": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/apm-install-dir-11686-1234-tg0r31",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-tslint/issues"
+  },
+  "dependencies": {
+    "atom-package-deps": "4.1.0",
+    "loophole": "^1.1.0",
+    "resolve": "1.1.7",
+    "tslint": "3.14.0",
+    "typescript": "1.8.10"
+  },
+  "description": "Linter plugin for Typescript, using tslint",
+  "devDependencies": {
+    "coffeelint": "1.15.7"
+  },
+  "dist": {
+    "shasum": "ef99bad67e3e7db0dc69d8d379272ef02f4a4a21"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/AtomLinter/linter-tslint",
+  "license": "MIT",
+  "linter-package": true,
+  "main": "./lib/init.coffee",
+  "name": "linter-tslint",
+  "optionalDependencies": {},
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "linter-tslint\n==============\n[![Build Status](https://travis-ci.org/AtomLinter/linter-tslint.svg?branch=master)](https://travis-ci.org/AtomLinter/linter-tslint)\n\nThis linter plugin for AtomLinter provides an interface to [tslint](https://github.com/palantir/tslint). It will be used with files that have the \"TypeScript\" or \"TypeScriptReact\" syntax.\n\n## Installation\nOn first activation the plugin will install all dependencies automatically, you no longer have to worry about installing Linter.\n\n### Plugin installation\n```\n$ apm install linter-tslint\n```\n\n## Settings\nYou can configure linter-tslint by editing `~/.atom/config.cson` (choose Config... in Atom menu):\n```coffee\n'linter-tslint':\n  # Custom rules directory (absolute path)\n  rulesDirectory: \"/path/to/rules\"\n  # Try using the local tslint package (if exist)\n  useLocalTslint: true\n```\n\n## Contributing\nIf you would like to contribute enhancements or fixes, please do the following:\n\n1. Fork the plugin repository.\n1. Hack on a separate topic branch created from the latest `master`.\n1. Commit and push the topic branch.\n1. Make a pull request.\n1. welcome to the club\n\nPlease note that modifications should follow these coding guidelines:\n\n- Indent is 2 spaces.\n- Code should pass coffeelint linter.\n- Vertical whitespace helps readability, don’t be afraid to use it.\n\nThank you for helping out!\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-tslint.git"
+  },
+  "scripts": {
+    "lint": "coffeelint ./lib",
+    "test": "npm run lint"
+  },
+  "version": "0.11.1"
+}
