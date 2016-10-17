@@ -4,6 +4,15 @@
       _analyticsUserId: "d4d3fb0b-5a91-44cf-85fb-bc2327452857"
     js: {}
   core:
+    disabledPackages: [
+      "minimap"
+      "minimap-split-diff"
+      "atom-typescript"
+      "linter-eslint"
+      "linter-tslint"
+      "linter-csslint"
+    ]
+    followSymlinks: false
     ignoredNames: [
       ".git"
       ".hg"
@@ -11,16 +20,19 @@
       ".DS_Store"
       "._*"
       "Thumbs.db"
+      ".vscode"
       "node_modules"
-      "vendor"
     ]
     projectHome: "/Users/Goatie/Developer"
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "monokai"
     ]
   editor:
+    scrollPastEnd: true
     showIndentGuide: true
+    showInvisibles: true
     softWrapAtPreferredLineLength: true
     tabLength: 4
     tabType: "soft"
@@ -29,6 +41,9 @@
   "git-diff":
     showIconsInEditorGutter: true
   linter:
+    errorPanelHeight: 88
+    showErrorPanel: false
+    showErrorTabLine: true
     showProviderName: false
   "linter-eslint":
     useGlobalEslint: true
@@ -38,6 +53,8 @@
     plugins:
       "split-diff": true
       "split-diffDecorationsZIndex": 0
+  "seti-ui":
+    fileIcons: false
   "tree-view":
     hideIgnoredNames: true
   welcome:
@@ -52,5 +69,12 @@
   editor:
     tabLength: 4
 ".riot.source":
+  editor:
+    tabLength: 4
+".source.ts":
+  editor:
+    showInvisibles: true
+    tabLength: 4
+".source.tsx":
   editor:
     tabLength: 4

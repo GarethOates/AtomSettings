@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/pd/t00ytgd16r38kr7mx__2hvkh0000gp/T/d-11685-5175-q2b1jx/package.tgz",
+        "raw": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-116914-4556-14v5jop/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/pd/t00ytgd16r38kr7mx__2hvkh0000gp/T/d-11685-5175-q2b1jx/package.tgz",
-        "spec": "/private/var/folders/pd/t00ytgd16r38kr7mx__2hvkh0000gp/T/d-11685-5175-q2b1jx/package.tgz",
+        "rawSpec": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-116914-4556-14v5jop/package.tgz",
+        "spec": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-116914-4556-14v5jop/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/pd/t00ytgd16r38kr7mx__2hvkh0000gp/T/apm-install-dir-11685-5175-1h184vn"
+      "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/apm-install-dir-116914-4556-dmqihv"
     ]
   ],
-  "_from": "../d-11685-5175-q2b1jx/package.tgz",
-  "_id": "minimap-split-diff@0.3.1",
+  "_from": "../d-116914-4556-14v5jop/package.tgz",
+  "_id": "minimap-split-diff@0.3.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/minimap-split-diff",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/pd/t00ytgd16r38kr7mx__2hvkh0000gp/T/d-11685-5175-q2b1jx/package.tgz",
+    "raw": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-116914-4556-14v5jop/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/pd/t00ytgd16r38kr7mx__2hvkh0000gp/T/d-11685-5175-q2b1jx/package.tgz",
-    "spec": "/private/var/folders/pd/t00ytgd16r38kr7mx__2hvkh0000gp/T/d-11685-5175-q2b1jx/package.tgz",
+    "rawSpec": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-116914-4556-14v5jop/package.tgz",
+    "spec": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-116914-4556-14v5jop/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-11685-5175-q2b1jx/package.tgz",
-  "_shasum": "4496684afaadc16871f730aeee2c74442fb3c7b0",
+  "_resolved": "file:../d-116914-4556-14v5jop/package.tgz",
+  "_shasum": "163954e7ba8306e47fb384d9b422351a831bad34",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/pd/t00ytgd16r38kr7mx__2hvkh0000gp/T/d-11685-5175-q2b1jx/package.tgz",
-  "_where": "/private/var/folders/pd/t00ytgd16r38kr7mx__2hvkh0000gp/T/apm-install-dir-11685-5175-1h184vn",
+  "_spec": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/d-116914-4556-14v5jop/package.tgz",
+  "_where": "/private/var/folders/zf/nsgc94ld4qb4cq6ncghtgydm0000gn/T/apm-install-dir-116914-4556-dmqihv",
   "bugs": {
     "url": "https://github.com/mupchrch/minimap-split-diff/issues"
   },
@@ -65,5 +65,5 @@
     "type": "git",
     "url": "git+https://github.com/mupchrch/minimap-split-diff.git"
   },
-  "version": "0.3.1"
+  "version": "0.3.2"
 }
